@@ -94,12 +94,12 @@ export default function Staff({ serviceDomain, microcmsApiKey }) {
                       return isWorking ?
                         reservation ?
                           <TableCell key={`week-${workday.toISOString()}-${hour}`} sx={{ bgcolor: red[500], color: grey[50] }} align='center' >
-                            {/* {
+                            {
                               // workshop: LINE のプロフィールの userId と microCMS で予約している lineId が同じ場合はリンクを表示する
                               profile?.userId == reservation.lineId ?
                                 <Button href={`/reservations/${reservation.id}`}>予約確認</Button> :
                                 '予約済み'
-                            } */}
+                            }
                             予約済み
                           </TableCell> :
                           <TableCell key={`week-${workday.toISOString()}-${hour}`} align='center'>
